@@ -23,19 +23,6 @@ public class MainActivity extends Activity {
 
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
-
-        //mTextView = binding.text;
     }
 
-    public void notifyme(View view) {
-        NotificationCompat.Builder builder = new NotificationCompat.Builder(this);
-        builder.setContentTitle("This page 1");
-        builder.setContentText("Contents on page 1");
-        //builder.setSmallIcon(R.drawable.ic_launcher);
-
-        Notification notification = builder.build();
-
-        NotificationManagerCompat managerCompat = NotificationManagerCompat.from(this);
-        managerCompat.notify(1,notification);
-    }
 }
